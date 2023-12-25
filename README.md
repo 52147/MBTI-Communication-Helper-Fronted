@@ -1,5 +1,5 @@
 # MBTI Communication Helper
-
+![Uploading image.png…]()
 ## Introduction
 The MBTI Communication Helper is a web application designed to aid individuals in improving their communication skills. It leverages roles, situations, and MBTI (Myers-Briggs Type Indicator) types to provide personalized communication guidance, making it especially beneficial for those looking to align their true selves with the nuances of social interactions.
 
