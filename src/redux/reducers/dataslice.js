@@ -4,7 +4,7 @@ const initialState = {
   
   const dataSliceReducer = (state = initialState, action) => {
     switch (action.type) {
-      case 'data/setResponse':
+      case 'SET_RESPONSE':
         return {
           ...state,
           response: action.payload

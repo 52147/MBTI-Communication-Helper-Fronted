@@ -86,10 +86,25 @@ export const Home = () => {
       console.error("Error in generating response:", error);
     }
   };
-
+  console.log(responseFromRedux);
+  const formatResponse = (responseText) => {
+    if (!responseText) return null;
+  
+    // Here you can add any formatting logic. For example, splitting lines, etc.
+    // I'm splitting the text into paragraphs based on new lines for this example.
+    const paragraphs = responseText.split('\n').filter(p => p);
+  
+    return (
+      <div>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+    );
+  };
   return (
     <div className="card-container">
-      <div className="card" style={{ maxWidth: "100%", width: "60%" }}>
+      <div className="card" style={{ maxWidth: "100%", width: "100%" }}>
         <Container className="mt-4">
           <h1 className="mb-4">MBTI Communication Helper</h1>
           <Form onSubmit={handleSubmit}>
@@ -184,7 +199,7 @@ export const Home = () => {
           </Form>
           <div className="mt-4">
             <h2>Response:</h2>
-            <p>{responseFromRedux}</p>
+            {formatResponse(responseFromRedux.response)}
             {/* Audio player component */}
           </div>
         </Container>
