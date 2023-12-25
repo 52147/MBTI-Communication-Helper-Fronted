@@ -17,11 +17,19 @@ The MBTI Communication Helper is a web application designed to aid individuals i
 
 ## Installation
 To install and run the application, use the following commands:
+Run the fronted at localhost:3000
 ```bash
-git clone [<repository-url>](https://github.com/52147/MBTI-Communication-Helper-Fronted.git)
+git clone https://github.com/52147/MBTI-Communication-Helper-Fronted.git
 cd mbti-communication-helper-fronted
 npm install
 npm start
+```
+Run the backend at localhost:5050
+```bash
+git clone https://github.com/52147/MBTI-Communication-Helper-Backend.git
+cd mbti-communication-helper-backend
+npm install
+node server.js
 ```
 
 # Technologies
