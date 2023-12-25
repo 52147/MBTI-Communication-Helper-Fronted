@@ -18,8 +18,8 @@ The MBTI Communication Helper is a web application designed to aid individuals i
 ## Installation
 To install and run the application, use the following commands:
 ```bash
-git clone <repository-url>
-cd mbti-communication-helper
+git clone [<repository-url>](https://github.com/52147/MBTI-Communication-Helper-Fronted.git)
+cd mbti-communication-helper-fronted
 npm install
 npm start
 ```
